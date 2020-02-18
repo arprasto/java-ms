@@ -1,0 +1,79 @@
+********************************************************************************
+product = WebSphere Application Server 20.0.0.1 (wlp-1.0.36.cl200120200108-0300)
+wlp.install.dir = /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7/target/liberty/wlp/
+server.config.dir = /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/
+java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre
+java.version = 1.8.0_231
+java.runtime = Java(TM) SE Runtime Environment (1.8.0_231-b11)
+os = Mac OS X (10.15.2; x86_64) (en_IN)
+process = 87267@arpits-air.c4p-in.ibmmobiledemo.com
+********************************************************************************
+[31/1/20 18:18:28:913 IST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server daytrader7Sample has been launched.
+[31/1/20 18:18:28:957 IST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/20.0.0.1/lafiles/en.html
+[31/1/20 18:18:30:349 IST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.861 seconds
+[31/1/20 18:18:30:398 IST] 0000001f com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[31/1/20 18:18:31:281 IST] 00000015 com.ibm.ws.annocache.service                                 I OSGi Work Path [ /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/workarea/org.eclipse.osgi/40/data ]
+[31/1/20 18:18:31:303 IST] 00000016 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications.
+[31/1/20 18:18:31:516 IST] 00000024 com.ibm.ws.tcpchannel.internal.TCPPort                       E CWWKO0221E: TCP Channel defaultHttpEndpoint initialization did not succeed.  The socket bind did not succeed for host * and port 9080.  The port might already be in use.  Exception Message: Address already in use
+[31/1/20 18:18:32:660 IST] 00000012 com.ibm.ws.tcpchannel.internal.TCPPort                       E CWWKO0221E: TCP Channel wasJmsEndpoint398 initialization did not succeed.  The socket bind did not succeed for host localhost and port 7276.  The port might already be in use.  Exception Message: Address already in use
+[31/1/20 18:18:33:974 IST] 00000012 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: JMS server has started.  
+[31/1/20 18:18:35:468 IST] 00000013 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "org.omg.CORBA.INITIALIZE: :  vmcid: 0x0 minor code: 0x0  completed: No com.ibm.ws.transport.iiop.internal.ORBWrapperInternal 108" at ffdc_20.01.31_18.18.35.0.log
+[31/1/20 18:18:36:247 IST] 00000021 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application daytrader7.
+[31/1/20 18:18:36:248 IST] 00000021 bm.ws.app.manager.ear.internal.EARDeployedAppInfoFactoryImpl I CWWKZ0136I: The daytrader7 application is using the archive file at the /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/apps/daytrader-ee7.ear location.
+[31/1/20 18:18:37:922 IST] 00000021 com.ibm.ws.jca.cm.ConnectorService                           I J2CA8050I: An authentication alias should be used instead of defining a user name and password on dataSource[DefaultDataSource].
+[31/1/20 18:18:38:188 IST] 00000021 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0010I: Performing recovery processing for local WebSphere server (daytrader7Sample).
+[31/1/20 18:18:38:254 IST] 00000021 com.ibm.ws.recoverylog.spi.RecoveryDirectorImpl              I CWRLS0012I: All persistent services have been directed to perform recovery processing for this WebSphere server (daytrader7Sample).
+[31/1/20 18:18:38:255 IST] 00000041 com.ibm.tx.jta.impl.RecoveryManager                          I WTRN0135I: Transaction service recovering no transactions.
+[31/1/20 18:18:38:494 IST] 00000021 SystemOut                                                    O [EL Info]: server: 2020-01-31 18:18:38.452--Detected server platform: org.eclipse.persistence.platform.server.was.WebSphere_Liberty_Platform.
+[31/1/20 18:18:39:543 IST] 00000021 org.jboss.weld.Version                                       I WELD-000900: 2.4.8 (Final)
+[31/1/20 18:18:41:894 IST] 00000021 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[31/1/20 18:18:41:906 IST] 00000021 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         I CNTR4000I: The daytrader-ee7-ejb.jar EJB module in the daytrader7 application is starting.
+[31/1/20 18:18:42:089 IST] 00000021 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.IllegalStateException: The orb is not available com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.install 950" at ffdc_20.01.31_18.18.41.0.log
+[31/1/20 18:18:42:091 IST] 00000021 com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime           I CNTR0167I: The server is binding the com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton interface of the MarketSummarySingleton enterprise bean in the daytrader-ee7-ejb.jar module of the daytrader7 application.  The binding location is: java:global/daytrader-ee7/daytrader-ee7-ejb/MarketSummarySingleton!com.ibm.websphere.samples.daytrader.ejb3.MarketSummarySingleton
+[31/1/20 18:18:42:162 IST] 00000021 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.NullPointerException com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.uninstall 1069" at ffdc_20.01.31_18.18.42.0.log
+[31/1/20 18:18:42:234 IST] 00000021 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "com.ibm.ws.exception.RuntimeWarning: java.lang.NullPointerException com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.startModule 980" at ffdc_20.01.31_18.18.42.1.log
+[31/1/20 18:18:42:234 IST] 00000021 com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl         E CNTR4002E: The daytrader-ee7-ejb.jar EJB module in the daytrader7 application failed to start. Exception: com.ibm.ws.exception.RuntimeError: java.lang.IllegalStateException: The orb is not available
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.startModule(AbstractEJBRuntime.java:529)
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl.start(EJBRuntimeImpl.java:1110)
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBModuleRuntimeContainerImpl.startModule(EJBModuleRuntimeContainerImpl.java:145)
+	at com.ibm.ws.app.manager.module.internal.ModuleHandlerBase.deployModule(ModuleHandlerBase.java:99)
+	at com.ibm.ws.app.manager.module.internal.DeployedModuleInfoImpl.installModule(DeployedModuleInfoImpl.java:49)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.deployModules(SimpleDeployedAppInfoBase.java:578)
+	at com.ibm.ws.app.manager.module.internal.SimpleDeployedAppInfoBase.installApp(SimpleDeployedAppInfoBase.java:514)
+	at com.ibm.ws.app.manager.module.internal.DeployedAppInfoBase.deployApp(DeployedAppInfoBase.java:347)
+	at com.ibm.ws.app.manager.ear.internal.EARApplicationHandlerImpl.install(EARApplicationHandlerImpl.java:76)
+	at com.ibm.ws.app.manager.internal.statemachine.StartAction.execute(StartAction.java:140)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.enterState(ApplicationStateMachineImpl.java:1266)
+	at com.ibm.ws.app.manager.internal.statemachine.ApplicationStateMachineImpl.run(ApplicationStateMachineImpl.java:881)
+	at com.ibm.ws.threading.internal.ExecutorServiceImpl$RunnableWrapper.run(ExecutorServiceImpl.java:239)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: The orb is not available
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.getEjbAdapter(EJBRemoteRuntimeImpl.java:290)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.bind(EJBRemoteRuntimeImpl.java:185)
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.bind(EJBRemoteRuntimeImpl.java:169)
+	at com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl.bindBindings(NameSpaceBinderImpl.java:276)
+	at com.ibm.ws.ejbcontainer.osgi.internal.NameSpaceBinderImpl.bindBindings(NameSpaceBinderImpl.java:39)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.bindInterface(AbstractEJBRuntime.java:997)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.bindInterfaces(AbstractEJBRuntime.java:950)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.bindInterfaces(AbstractEJBRuntime.java:862)
+	at com.ibm.ws.ejbcontainer.osgi.internal.EJBRuntimeImpl.bindInterfaces(EJBRuntimeImpl.java:1188)
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.startModule(AbstractEJBRuntime.java:524)
+	... 15 more
+
+[31/1/20 18:18:42:492 IST] 00000021 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "com.ibm.ws.container.service.state.StateChangeException: com.ibm.ws.exception.RuntimeError: java.lang.IllegalStateException: The orb is not available com.ibm.ws.app.manager.module.internal.ModuleHandlerBase 100" at ffdc_20.01.31_18.18.42.2.log
+[31/1/20 18:18:42:549 IST] 00000021 eclipselink.server                                           I CWWJP9990I: [eclipselink.server] Detected server platform: org.eclipse.persistence.platform.server.was.WebSphere_Liberty_Platform.
+[31/1/20 18:18:42:616 IST] 00000021 om.ibm.ws.app.manager.ear.internal.EARApplicationHandlerImpl E CWWKZ0106E: Could not start web application daytrader7.
+[31/1/20 18:18:42:618 IST] 00000021 com.ibm.ws.app.manager.AppMessageHelper                      E CWWKZ0002E: An exception occurred while starting the application daytrader7. The exception message was: com.ibm.ws.container.service.state.StateChangeException: com.ibm.ws.exception.RuntimeError: java.lang.IllegalStateException: The orb is not available
+[31/1/20 18:18:42:645 IST] 0000001f com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [beanValidation-1.1, cdi-1.2, concurrent-1.0, ejb-3.2, ejbHome-3.2, ejbLite-3.2, ejbPersistentTimer-3.2, ejbRemote-3.2, el-3.0, jca-1.7, jdbc-4.1, jndi-1.0, jpa-2.1, jpaContainer-2.1, jsf-2.2, jsonp-1.0, jsp-2.3, localConnector-1.0, mdb-3.2, servlet-3.1, wasJmsClient-2.0, wasJmsServer-1.0, websocket-1.1].
+[31/1/20 18:18:42:646 IST] 0000001f com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 12.295 seconds.
+[31/1/20 18:18:42:646 IST] 0000001f com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The daytrader7Sample server is ready to run a smarter planet. The daytrader7Sample server started in 14.159 seconds.
+[31/1/20 18:18:43:043 IST] 00000045 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/state/plugin-cfg.xml.
+[31/1/20 18:18:43:531 IST] 00000010 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Server shutdown requested on Friday, 31 January, 2020 at 6:18 PM. The server daytrader7Sample is shutting down.
+[31/1/20 18:18:43:536 IST] 0000004c com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[31/1/20 18:18:43:550 IST] 0000004c com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[31/1/20 18:18:44:313 IST] 0000004c com.ibm.tx.jta.impl.FailureScopeController                   A WTRN0105I: The transaction service has shutdown successfully with no transactions requiring recovery.
+[31/1/20 18:18:44:591 IST] 0000004c com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1589I: The file store has stopped successfully.
+[31/1/20 18:18:44:720 IST] 0000004c com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0121I: JMS server stopped.  
+[31/1/20 18:18:45:029 IST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server daytrader7Sample stopped after 16.542 seconds.

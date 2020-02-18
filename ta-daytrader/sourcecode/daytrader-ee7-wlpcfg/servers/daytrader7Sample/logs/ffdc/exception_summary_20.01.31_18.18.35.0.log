@@ -1,0 +1,14 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1    31/1/20 18:18:35:251 IST    31/1/20 18:18:35:251 IST org.omg.CORBA.INITIALIZE com.ibm.ws.transport.iiop.internal.ORBWrapperInternal 108
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.18.35.0.log
+     1      1    31/1/20 18:18:41:997 IST    31/1/20 18:18:41:997 IST java.lang.IllegalStateException com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.install 950
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.18.41.0.log
+     2      1    31/1/20 18:18:42:098 IST    31/1/20 18:18:42:098 IST java.lang.NullPointerException com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.uninstall 1069
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.18.42.0.log
+     3      1    31/1/20 18:18:42:162 IST    31/1/20 18:18:42:162 IST com.ibm.ws.exception.RuntimeWarning com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.startModule 980
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.18.42.1.log
+     4      1    31/1/20 18:18:42:287 IST    31/1/20 18:18:42:287 IST com.ibm.ws.container.service.state.StateChangeException com.ibm.ws.app.manager.module.internal.ModuleHandlerBase 100
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.18.42.2.log
+------+------+---------------------------+---------------------------+---------------------------

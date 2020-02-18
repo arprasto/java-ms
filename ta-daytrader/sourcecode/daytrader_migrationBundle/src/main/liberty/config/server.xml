@@ -1,0 +1,75 @@
+<server>
+<!--These elements have been identified from this application's configuration.-->
+<featureManager>
+<feature>beanValidation-1.1</feature>
+<feature>cdi-1.2</feature>
+<feature>concurrent-1.0</feature>
+<feature>ejbLite-3.2</feature>
+<feature>jdbc-4.1</feature>
+<feature>jndi-1.0</feature>
+<feature>jpa-2.1</feature>
+<feature>jsf-2.2</feature>
+<feature>jsonp-1.0</feature>
+<feature>jsp-2.3</feature>
+<feature>servlet-3.1</feature>
+<feature>websocket-1.1</feature>
+<feature>ejbPersistentTimer-3.2</feature>
+<feature>ejbRemote-3.2</feature>
+<feature>jms-2.0</feature>
+<feature>mdb-3.2</feature>
+</featureManager>
+<httpEndpoint host="*" httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
+
+<iiopEndpoint id="defaultIiopEndpoint" iiopPort="2809" iiopsPort="2810"/>
+
+<jmsQueue id="TradeBrokerQueue" jndiName="jms/TradeBrokerQueue">
+        <properties.wasJms deliveryMode="NonPersistent" queueName="TradeBrokerQueue"/>
+    </jmsQueue>
+<jmsQueue id="BrokerQueue" jndiName="jms/BrokerQueue">
+        <properties.wasJms deliveryMode="NonPersistent" queueName="BrokerQueue"/>
+    </jmsQueue>
+<jmsTopic id="TradeStreamerTopic" jndiName="jms/TradeStreamerTopic">
+        <properties.wasJms deliveryMode="NonPersistent" topicName="TradeStreamerTopic" topicSpace="TradeTopicSpace"/>
+    </jmsTopic>
+<jmsTopic id="StreamerTopic" jndiName="jms/StreamerTopic">
+        <properties.wasJms deliveryMode="NonPersistent" topicName="StreamerTopic" topicSpace="TradeTopicSpace"/>
+    </jmsTopic>
+<jmsQueueConnectionFactory id="TradeBrokerQCF" jndiName="jms/TradeBrokerQCF">
+        <properties.wasJms targetTransportChain=""/>
+    </jmsQueueConnectionFactory>
+<jmsTopicConnectionFactory id="TradeStreamerTCF" jndiName="jms/TradeStreamerTCF">
+        <properties.wasJms clientID="" durableSubscriptionHome="server7Node01.server1-DayTraderBus" targetTransportChain=""/>
+    </jmsTopicConnectionFactory>
+<jdbcDriver id="DerbyEmbedded" libraryRef="DerbyLib"/>
+    <library filesetRef="DerbyFileset" id="DerbyLib"/>
+	<fileset dir="/project/daytrader-ee7-wlpcfg/shared/resources/Daytrader7SampleDerbyLibs" id="DerbyFileset" includes="derby-10.10.1.1.jar"/>
+<!-- <variable name="DERBY_JDBC_DRIVER_PATH" value="${WAS_INSTALL_ROOT}/derby/lib"/> -->
+<dataSource id="DefaultDataSource" jdbcDriverRef="DerbyEmbedded" jndiName="jdbc/TradeDataSource">
+        <properties.derby.embedded dataSourceName="DefaultDataSource" databaseName="/project/daytrader-ee7-wlpcfg/shared/resources/data/tradedb" name="DefaultDataSource" preTestSQLString=""/>
+        <connectionManager agedTimeout="0" connectionTimeout="1800" maxIdleTime="1800" maxPoolSize="1000" minPoolSize="1" reapTime="180"/>
+    </dataSource>
+<variable name="DERBY_JDBC_DRIVER_PATH" value="${shared.config.dir}/lib/global"/>
+<applicationManager autoExpand="true"/>
+<!--These elements are from the profile level configuration. Not all of them may be necessary for your application.-->
+<messagingEngine>
+        <queue id="TradeBrokerQueue"/>
+        <queue id="BrokerQueue"/>
+        <topicSpace id="TradeStreamerTopic"/>
+        <topicSpace id="StreamerTopic"/>
+    </messagingEngine>
+<jmsActivationSpec id="TradeBrokerMDBSpec">
+        <properties.wasJms destinationType="javax.jms.Queue"/>
+    </jmsActivationSpec>
+<jmsActivationSpec id="TradeStreamerMDBSpec">
+        <properties.wasJms destinationType="javax.jms.Topic"/>
+    </jmsActivationSpec>
+<jmsConnectionFactory id="ConMgr3" jndiName="ConMgr3">
+        <properties.wasJms clientID="" durableSubscriptionHome="server7Node01.server1-DayTraderBus" targetTransportChain=""/>
+    </jmsConnectionFactory>
+<jmsConnectionFactory id="ConMgr4" jndiName="ConMgr4">
+        <properties.wasJms clientID="" durableSubscriptionHome="server7Node01.server1-DayTraderBus" targetTransportChain=""/>
+    </jmsConnectionFactory>
+    <authData id="TradeDataSourceAuthData" password="db_password" user="db_username"/>
+    <authData id="TradeAdminAuthData" password="db_password" user="db_username"/>
+    <application id="DayTrader" location="daytrader-ee7.ear" name="DayTrader" type="ear"/>
+</server>

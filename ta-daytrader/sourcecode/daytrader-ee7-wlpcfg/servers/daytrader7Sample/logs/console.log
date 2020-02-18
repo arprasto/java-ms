@@ -1,0 +1,23 @@
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
+Launching daytrader7Sample (WebSphere Application Server 20.0.0.1/wlp-1.0.36.cl200120200108-0300) on Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_231-b11 (en_IN)
+[AUDIT   ] CWWKE0001I: The server daytrader7Sample has been launched.
+[AUDIT   ] CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/20.0.0.1/lafiles/en.html
+[AUDIT   ] CWWKZ0058I: Monitoring dropins for applications.
+[ERROR   ] CWWKO0221E: TCP Channel defaultHttpEndpoint initialization did not succeed.  The socket bind did not succeed for host * and port 9080.  The port might already be in use.  Exception Message: Address already in use
+[ERROR   ] CWWKO0221E: TCP Channel wasJmsEndpoint398 initialization did not succeed.  The socket bind did not succeed for host localhost and port 7276.  The port might already be in use.  Exception Message: Address already in use
+[EL Info]: server: 2020-01-31 18:18:38.452--Detected server platform: org.eclipse.persistence.platform.server.was.WebSphere_Liberty_Platform.
+[ERROR   ] CNTR4002E: The daytrader-ee7-ejb.jar EJB module in the daytrader7 application failed to start. Exception: com.ibm.ws.exception.RuntimeError: java.lang.IllegalStateException: The orb is not available
+	at com.ibm.ws.ejbcontainer.runtime.AbstractEJBRuntime.startModule(AbstractEJBRuntime.java:529)
+	at [internal classes]
+Caused by: java.lang.IllegalStateException: The orb is not available
+	at com.ibm.ws.ejbcontainer.remote.internal.EJBRemoteRuntimeImpl.getEjbAdapter(EJBRemoteRuntimeImpl.java:290)
+	... 1 more
+
+[ERROR   ] CWWKZ0106E: Could not start web application daytrader7.
+[ERROR   ] CWWKZ0002E: An exception occurred while starting the application daytrader7. The exception message was: com.ibm.ws.container.service.state.StateChangeException: com.ibm.ws.exception.RuntimeError: java.lang.IllegalStateException: The orb is not available
+[AUDIT   ] CWWKF0012I: The server installed the following features: [beanValidation-1.1, cdi-1.2, concurrent-1.0, ejb-3.2, ejbHome-3.2, ejbLite-3.2, ejbPersistentTimer-3.2, ejbRemote-3.2, el-3.0, jca-1.7, jdbc-4.1, jndi-1.0, jpa-2.1, jpaContainer-2.1, jsf-2.2, jsonp-1.0, jsp-2.3, localConnector-1.0, mdb-3.2, servlet-3.1, wasJmsClient-2.0, wasJmsServer-1.0, websocket-1.1].
+[AUDIT   ] CWWKF0011I: The daytrader7Sample server is ready to run a smarter planet. The daytrader7Sample server started in 14.159 seconds.
+[AUDIT   ] CWWKE0055I: Server shutdown requested on Friday, 31 January, 2020 at 6:18 PM. The server daytrader7Sample is shutting down.
+[AUDIT   ] CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[AUDIT   ] WTRN0105I: The transaction service has shutdown successfully with no transactions requiring recovery.
+[AUDIT   ] CWWKE0036I: The server daytrader7Sample stopped after 16.542 seconds.

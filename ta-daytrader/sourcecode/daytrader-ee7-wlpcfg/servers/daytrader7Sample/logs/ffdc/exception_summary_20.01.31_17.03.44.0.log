@@ -1,0 +1,69 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      8    31/1/20 17:03:43:970 IST    31/1/20 17:03:44:101 IST java.lang.NoClassDefFoundError com.ibm.ws.config-1.0.36.cl200120200108-0300 log
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.03.43.0.log
+     1      9    31/1/20 17:03:44:056 IST    31/1/20 17:03:44:138 IST java.lang.NoClassDefFoundError com.ibm.ws.config.ext-1.0.36.cl200120200108-0300 log
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.03.44.0.log
+     2      1    31/1/20 17:03:44:102 IST    31/1/20 17:03:44:102 IST java.lang.NoClassDefFoundError com.ibm.ws.logging.osgi-1.0.36.cl200120200108-0300 log
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.03.44.1.log
+     3      1    31/1/20 17:03:44:121 IST    31/1/20 17:03:44:121 IST java.lang.NoClassDefFoundError com.ibm.ws.artifact.zip-1.0.36.cl200120200108-0300 log
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.03.44.2.log
+     4     12    31/1/20 17:03:44:213 IST    31/1/20 18:16:05:326 IST org.osgi.framework.BundleException com.ibm.ws.dynamic.bundle.BundleFactory 179
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.03.44.3.log
+     5     12    31/1/20 17:03:44:234 IST    31/1/20 18:16:05:326 IST com.ibm.ws.dynamic.bundle.DynamicBundleException com.ibm.ws.beanvalidation.OSGiBeanValidationImpl 575
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.03.44.4.log
+     6      2    31/1/20 17:20:37:504 IST    31/1/20 17:22:57:155 IST java.sql.SQLNonTransientConnectionException com.ibm.ws.rsadapter.impl.WSRdbSpiLocalTransactionImpl 192
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.37.0.log
+     7      2    31/1/20 17:20:37:564 IST    31/1/20 17:22:57:263 IST com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ejs.j2c.LocalTransactionWrapper 198
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.37.1.log
+     8      2    31/1/20 17:20:37:622 IST    31/1/20 17:22:57:263 IST javax.transaction.xa.XAException com.ibm.tx.ltc.LocalTranCoordImpl.cleanup 755
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.37.2.log
+     9      4    31/1/20 17:20:37:635 IST    31/1/20 17:22:57:270 IST java.sql.SQLNonTransientConnectionException com.ibm.ws.rsadapter.spi.WSRdbManagedConnectionImpl.cleanupTransactions 1223
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.37.3.log
+    10      2    31/1/20 17:20:37:647 IST    31/1/20 17:22:57:270 IST com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ejs.j2c.MCWrapper.cleanup 706
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.37.4.log
+    11      2    31/1/20 17:20:37:779 IST    31/1/20 17:22:57:270 IST com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ejs.j2c.poolmanager.FreePool.cleanupAndDestroyMCWrapper 1140
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.37.5.log
+    12      2    31/1/20 17:20:37:880 IST    31/1/20 17:22:57:270 IST com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ws.rsadapter.spi.WSRdbManagedConnectionImpl.destroy 957
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.37.6.log
+    13      2    31/1/20 17:20:37:893 IST    31/1/20 17:22:57:274 IST com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ejs.j2c.MCWrapper.destroy 791
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.37.7.log
+    14      2    31/1/20 17:20:37:977 IST    31/1/20 17:22:57:274 IST com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ejs.j2c.poolmanager.FreePool.cleanupAndDestroyMCWrapper 300
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.37.8.log
+    15      2    31/1/20 17:20:38:051 IST    31/1/20 17:22:57:274 IST com.ibm.ws.LocalTransaction.InconsistentLocalTranException com.ibm.ws.transaction.services.WebAppTransactionCollaboratorImpl 327
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_17.20.38.0.log
+    16     10    31/1/20 18:11:13:981 IST    31/1/20 18:17:14:311 IST java.io.FileNotFoundException com.ibm.ws.annocache.targets.cache.internal.TargetCacheImpl_DataBase 813
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.13.0.log
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.14.0.log
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.14.1.log
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.14.2.log
+    17      1    31/1/20 18:11:20:082 IST    31/1/20 18:11:20:082 IST java.sql.SQLNonTransientConnectionException com.ibm.ws.rsadapter.jdbc.v41.WSJdbc41PreparedStatement.closeWrapper 310
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.20.0.log
+    18      1    31/1/20 18:11:20:100 IST    31/1/20 18:11:20:100 IST java.sql.SQLNonTransientConnectionException com.ibm.ws.rsadapter.jdbc.WSJdbcObject.closeChildWrappers 554
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.20.1.log
+    19      4    31/1/20 18:11:20:126 IST    31/1/20 18:11:35:145 IST java.sql.SQLNonTransientConnectionException com.ibm.ws.rsadapter.jdbc.WSJdbcDataSource.getConnection 280
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.20.2.log
+    20      1    31/1/20 18:11:35:149 IST    31/1/20 18:11:35:149 IST javax.transaction.xa.XAException com.ibm.ws.rsadapter.spi.WSRdbXaResourceImpl.rollback 524
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.35.0.log
+    21      1    31/1/20 18:11:35:161 IST    31/1/20 18:11:35:161 IST javax.transaction.xa.XAException com.ibm.ejs.j2c.XATransactionWrapper.rollback 755
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.35.1.log
+    22      1    31/1/20 18:11:35:222 IST    31/1/20 18:11:35:222 IST javax.transaction.xa.XAException com.ibm.ws.Transaction.JTA.JTAXAResourceImpl.rollback 386
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.35.3.log
+    23      1    31/1/20 18:11:35:267 IST    31/1/20 18:11:35:267 IST javax.transaction.xa.XAException com.ibm.tx.jta.impl.RegisteredResources.deliverOutcome 1923
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.35.4.log
+    24      1    31/1/20 18:11:35:310 IST    31/1/20 18:11:35:310 IST javax.ejb.EJBTransactionRolledbackException com.ibm.ejs.container.EJSHome.createBeanO 1047
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.35.5.log
+    25      2    31/1/20 18:11:35:599 IST    31/1/20 18:11:35:728 IST javax.ejb.NoSuchEJBException com.ibm.ejs.container.LocalExceptionMappingStrategy.setUncheckedException 178
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.35.8.log
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.35.10.log
+    26      2    31/1/20 18:11:35:604 IST    31/1/20 18:11:35:731 IST javax.ejb.NoSuchEJBException com.ibm.ejs.container.TimedObjectWrapper.invokeCallback 83
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.35.9.log
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.11.35.11.log
+    27    194    31/1/20 18:12:00:027 IST    31/1/20 19:15:20:010 IST java.sql.SQLException com.ibm.ws.rsadapter.impl.DerbyHelper 1298
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.12.00.0.log
+    28    193    31/1/20 18:12:00:032 IST    31/1/20 19:15:00:014 IST com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ejs.j2c.poolmanager.FreePool.createManagedConnectionWithMCWrapper 199
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.12.00.1.log
+    29    193    31/1/20 18:12:00:123 IST    31/1/20 19:15:00:018 IST javax.resource.spi.ResourceAllocationException com.ibm.ws.rsadapter.jdbc.WSJdbcDataSource.getConnection 299
+                                                                            - /Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7-wlpcfg/servers/daytrader7Sample/logs/ffdc/ffdc_20.01.31_18.12.00.2.log
+------+------+---------------------------+---------------------------+---------------------------

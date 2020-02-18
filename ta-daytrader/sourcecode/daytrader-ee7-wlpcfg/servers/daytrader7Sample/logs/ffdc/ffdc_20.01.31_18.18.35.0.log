@@ -1,0 +1,888 @@
+------Start of DE processing------ = [31/1/20 18:18:35:255 IST]
+Exception = org.omg.CORBA.INITIALIZE
+Source = com.ibm.ws.transport.iiop.internal.ORBWrapperInternal
+probeid = 108
+Stack Dump = org.omg.CORBA.INITIALIZE: :  vmcid: 0x0 minor code: 0x0  completed: No
+	at org.apache.yoko.orb.spi.naming.NameServiceInitializer.post_init(NameServiceInitializer.java:143)
+	at org.apache.yoko.orb.OBCORBA.ORB_impl.initialize(ORB_impl.java:594)
+	at org.apache.yoko.orb.OBCORBA.ORB_impl.setParameters(ORB_impl.java:1243)
+	at org.apache.yoko.orb.OBCORBA.ORB_impl.set_parameters(ORB_impl.java:1695)
+	at org.omg.CORBA.ORB.init(ORB.java:179)
+	at com.ibm.ws.transport.iiop.yoko.ORBConfigAdapter.createORB(ORBConfigAdapter.java:78)
+	at com.ibm.ws.transport.iiop.yoko.ORBConfigAdapter.createServerORB(ORBConfigAdapter.java:53)
+	at com.ibm.ws.transport.iiop.internal.ORBWrapperInternal.activate(ORBWrapperInternal.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:317)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:307)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:340)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:114)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:982)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:900)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:216)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:213)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:114)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:530)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:494)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:685)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:86)
+	at org.apache.felix.scr.impl.inject.BindParameters.getServiceObject(BindParameters.java:47)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.getServiceObject(BindMethod.java:664)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2308)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.prebind(DependencyManager.java:1154)
+	at org.apache.felix.scr.impl.manager.DependencyManager.prebind(DependencyManager.java:1568)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.collectDependencies(AbstractComponentManager.java:1029)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:935)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:900)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:216)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:213)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:114)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:48)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:530)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:494)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:685)
+	at org.apache.felix.scr.impl.manager.SingleRefPair.getServiceObject(SingleRefPair.java:86)
+	at org.apache.felix.scr.impl.inject.BindParameters.getServiceObject(BindParameters.java:47)
+	at org.apache.felix.scr.impl.inject.methods.BindMethod.getServiceObject(BindMethod.java:664)
+	at org.apache.felix.scr.impl.manager.DependencyManager.getServiceObject(DependencyManager.java:2308)
+	at org.apache.felix.scr.impl.manager.DependencyManager.doInvokeBindMethod(DependencyManager.java:1805)
+	at org.apache.felix.scr.impl.manager.DependencyManager.invokeBindMethod(DependencyManager.java:1788)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.invokeBindMethod(SingleComponentManager.java:435)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:325)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleDynamicCustomizer.addedService(DependencyManager.java:294)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1045)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:999)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:666)
+	at org.apache.felix.scr.impl.manager.ComponentFactoryImpl.newInstance(ComponentFactoryImpl.java:130)
+	at com.ibm.ws.transport.iiop.internal.ReadyListenerImpl.readyChanged(ReadyListenerImpl.java:110)
+	at com.ibm.ws.transport.iiop.spi.SubsystemFactory.register(SubsystemFactory.java:23)
+	at com.ibm.ws.transport.iiop.internal.ORBWrapper.register(ORBWrapper.java:61)
+	at com.ibm.ws.transport.iiop.internal.ReadyListenerImpl.activate(ReadyListenerImpl.java:77)
+	at com.ibm.ws.transport.iiop.internal.ORBWrapper.activate(ORBWrapper.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invokeMethod(BaseMethod.java:242)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.access$500(BaseMethod.java:41)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod$Resolved.invoke(BaseMethod.java:678)
+	at org.apache.felix.scr.impl.inject.methods.BaseMethod.invoke(BaseMethod.java:524)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:317)
+	at org.apache.felix.scr.impl.inject.methods.ActivateMethod.invoke(ActivateMethod.java:307)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createImplementationObject(SingleComponentManager.java:340)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.createComponent(SingleComponentManager.java:114)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getService(SingleComponentManager.java:982)
+	at org.apache.felix.scr.impl.manager.SingleComponentManager.getServiceInternal(SingleComponentManager.java:955)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:765)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleStaticGreedyCustomizer.addedService(DependencyManager.java:496)
+	at org.apache.felix.scr.impl.manager.DependencyManager$MultipleStaticGreedyCustomizer.addedService(DependencyManager.java:464)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:1045)
+	at org.apache.felix.scr.impl.manager.DependencyManager$SingleStaticCustomizer.addedService(DependencyManager.java:999)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1216)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.customizerAdded(ServiceTracker.java:1137)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.trackAdding(ServiceTracker.java:944)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$AbstractTracked.track(ServiceTracker.java:880)
+	at org.apache.felix.scr.impl.manager.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:1168)
+	at org.apache.felix.scr.impl.BundleComponentActivator$ListenerInfo.serviceChanged(BundleComponentActivator.java:125)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:113)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:896)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:834)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:258)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:525)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:906)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager$3.register(AbstractComponentManager.java:892)
+	at org.apache.felix.scr.impl.manager.RegistrationManager.changeRegistration(RegistrationManager.java:128)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.registerService(AbstractComponentManager.java:959)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.activateInternal(AbstractComponentManager.java:732)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enableInternal(AbstractComponentManager.java:666)
+	at org.apache.felix.scr.impl.manager.AbstractComponentManager.enable(AbstractComponentManager.java:432)
+	at org.apache.felix.scr.impl.manager.ConfigurableComponentHolder.enableComponents(ConfigurableComponentHolder.java:666)
+	at org.apache.felix.scr.impl.BundleComponentActivator.initialEnable(BundleComponentActivator.java:352)
+	at org.apache.felix.scr.impl.Activator.loadComponents(Activator.java:553)
+	at org.apache.felix.scr.impl.Activator.access$200(Activator.java:69)
+	at org.apache.felix.scr.impl.Activator$ScrExtension.start(Activator.java:424)
+	at org.apache.felix.scr.impl.AbstractExtender.createExtension(AbstractExtender.java:196)
+	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:169)
+	at org.apache.felix.scr.impl.AbstractExtender.modifiedBundle(AbstractExtender.java:49)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerModified(BundleTracker.java:488)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerModified(BundleTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:232)
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:450)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:973)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:235)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:141)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:133)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:231)
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:498)
+	at org.eclipse.osgi.container.Module.start(Module.java:485)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1844)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.omg.CORBA.COMM_FAILURE: bind() failed: Address already in use (Bind failed):  vmcid: Apache minor code: 0x8  completed: No
+	at org.apache.yoko.orb.OCI.IIOP.Acceptor_impl.<init>(Acceptor_impl.java:485)
+	at org.apache.yoko.orb.OCI.IIOP.AccFactory_impl.create_acceptor(AccFactory_impl.java:189)
+	at org.apache.yoko.orb.OBPortableServer.POAManagerFactory_impl.create_POAManager(POAManagerFactory_impl.java:253)
+	at org.apache.yoko.orb.OB.ORBControl.initializeRootPOA(ORBControl.java:494)
+	at org.apache.yoko.orb.OBCORBA.ORB_impl.resolve_initial_references(ORB_impl.java:1282)
+	at org.apache.yoko.orb.OBPortableInterceptor.ORBInitInfo_impl.resolve_initial_references(ORBInitInfo_impl.java:130)
+	at org.apache.yoko.orb.spi.naming.NameServiceInitializer.post_init(NameServiceInitializer.java:101)
+	... 191 more
+Caused by: java.net.BindException: Address already in use (Bind failed)
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:387)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at com.ibm.ws.transport.iiop.yoko.helper.SocketFactoryHelper.attemptSocketBind(SocketFactoryHelper.java:139)
+	at com.ibm.ws.transport.iiop.yoko.helper.SocketFactoryHelper.openSocket(SocketFactoryHelper.java:68)
+	at com.ibm.ws.transport.iiop.yoko.DefaultSocketFactory.createServerSocket(DefaultSocketFactory.java:65)
+	at org.apache.yoko.orb.OCI.IIOP.Acceptor_impl.<init>(Acceptor_impl.java:470)
+	... 197 more
+
+Dump of callerThis
+Object type = com.ibm.ws.transport.iiop.internal.ORBWrapperInternal
+  tc = class com.ibm.websphere.ras.TraceComponent@2173151d
+    strings[0] = "TraceComponent[com.ibm.ws.transport.iiop.internal.ORBWrapperInternal,class com.ibm.ws.transport.iiop.internal.ORBWrapperInternal,[IIOP],com.ibm.ws.transport.iiop.resources.IiopMessages,null]"
+  KEY = "AdapterActivatorOp"
+  POA_NAME = "POAName"
+  configAdapter = class com.ibm.ws.transport.iiop.yoko.ORBConfigAdapter@49fb8583
+    tc = class com.ibm.websphere.ras.TraceComponent@279f0700
+      strings[0] = "TraceComponent[com.ibm.ws.transport.iiop.yoko.ORBConfigAdapter,class com.ibm.ws.transport.iiop.yoko.ORBConfigAdapter,[IIOP],com.ibm.ws.transport.iiop.resources.IiopMessages,null]"
+    serialVersionUID = 495296215346796646
+  orb = null
+  rootPOA = null
+  endpoints = class java.util.ArrayList@cfffd5
+    serialVersionUID = 8683452581122892189
+    DEFAULT_CAPACITY = 10
+    EMPTY_ELEMENTDATA = class java.lang.Object[0]
+    DEFAULTCAPACITY_EMPTY_ELEMENTDATA = class java.lang.Object[0]
+    elementData = class java.lang.Object[10]
+      Object[0] = class com.ibm.ws.transport.iiop.internal.IIOPEndpointImpl@71ce124b
+      Object[1] = null
+      Object[2] = null
+      Object[3] = null
+      Object[4] = null
+      Object[5] = null
+      Object[6] = null
+      Object[7] = null
+      Object[8] = null
+      Object[9] = null
+    size = 1
+    MAX_ARRAY_SIZE = 2147483639
+    modCount = 1
+    MAX_ARRAY_SIZE = 2147483639
+  extraConfig = class java.util.HashMap@11ef6204
+    serialVersionUID = 362498820763181265
+    DEFAULT_INITIAL_CAPACITY = 16
+    MAXIMUM_CAPACITY = 1073741824
+    DEFAULT_LOAD_FACTOR = 0.75
+    TREEIFY_THRESHOLD = 8
+    UNTREEIFY_THRESHOLD = 6
+    MIN_TREEIFY_CAPACITY = 64
+    table = null
+    entrySet = null
+    size = 0
+    modCount = 0
+    threshold = 0
+    loadFactor = 0.75
+    keySet = null
+    values = null
+  map = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceMap@28e4386f
+    referenceName = "AdapterActivatorOp"
+    context = class org.apache.felix.scr.impl.manager.ComponentContextImpl@114cb81d
+      m_componentManager = class org.apache.felix.scr.impl.manager.SingleComponentManager@5372fecd
+      edgeInfos = class org.apache.felix.scr.impl.manager.EdgeInfo[4]
+      m_componentInstance = class org.apache.felix.scr.impl.manager.ComponentContextImpl$ComponentInstanceImpl@16389c1b
+      m_usingBundle = class org.eclipse.osgi.internal.framework.EquinoxBundle@7592330f
+      m_serviceRegistration = class org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl@13e1d245
+      m_implementationObject = class com.ibm.ws.transport.iiop.internal.ORBWrapperInternal@bff1ae2
+      m_implementationAccessible = false
+      accessibleLatch = class java.util.concurrent.CountDownLatch@60779993
+      serviceObjectsHelper = class org.apache.felix.scr.impl.helper.ComponentServiceObjectsHelper@24b797c6
+      boundValues = null
+    elementMap = class java.util.concurrent.ConcurrentHashMap@2d76130e
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 4
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = class java.util.concurrent.ConcurrentHashMap$Node[16]
+      nextTable = null
+      baseCount = 1
+      sizeCtl = 12
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@7c5ba892
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    serialVersionUID = 6980924785166233786
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@e7bd7ed
+      strings[0] = "TraceComponent[com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceMap,class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceMap,[kernelUtils],com.ibm.ws.kernel.service.utils.resources.ServiceMessages,null]"
+  serialVersionUID = 7164573451466630029
+  subsystemFactories = class java.util.ArrayList@3d26776d
+    serialVersionUID = 8683452581122892189
+    DEFAULT_CAPACITY = 10
+    EMPTY_ELEMENTDATA = class java.lang.Object[0]
+    DEFAULTCAPACITY_EMPTY_ELEMENTDATA = class java.lang.Object[0]
+    elementData = class java.lang.Object[10]
+      Object[0] = class com.ibm.ws.transport.iiop.transaction.TransactionSubsystemFactory@64cb5fc4
+      Object[1] = class com.ibm.ws.transport.iiop.internal.NamingServiceSubsystemFactory@34324290
+      Object[2] = class com.ibm.ws.transport.iiop.yoko.DefaultSocketFactorySubsystemFactory@43ead6a9
+      Object[3] = class com.ibm.ws.transport.iiop.yoko.DispatchSubsystemFactory@2d6a8d53
+      Object[4] = null
+      Object[5] = null
+      Object[6] = null
+      Object[7] = null
+      Object[8] = null
+      Object[9] = null
+    size = 4
+    MAX_ARRAY_SIZE = 2147483639
+    modCount = 4
+    MAX_ARRAY_SIZE = 2147483639
+  properties = class org.apache.felix.scr.impl.helper.ReadOnlyDictionary@4268164b
+    m_delegate = class java.util.Hashtable@21d3c170
+      table = class java.util.Hashtable$Entry[47]
+      count = 21
+      threshold = 35
+      loadFactor = 0.75
+      modCount = 23
+      serialVersionUID = 1421746759512286392
+      MAX_ARRAY_SIZE = 2147483639
+      keySet = null
+      entrySet = null
+      values = null
+      KEYS = 0
+      VALUES = 1
+      ENTRIES = 2
+    m_serviceReference = null
+  serialVersionUID = 5107061526873741325
+  $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@1f48607d
+    strings[0] = "TraceComponent[com.ibm.ws.transport.iiop.internal.ServerPolicySourceImpl,class com.ibm.ws.transport.iiop.internal.ServerPolicySourceImpl,[IIOP],com.ibm.ws.transport.iiop.resources.IiopMessages,null]"
+
+Dump of objectArray[0]
+Object type = org.apache.felix.scr.impl.helper.ReadOnlyDictionary
+  m_delegate = class java.util.Hashtable@21d3c170
+    table = class java.util.Hashtable$Entry[47]
+      Entry[0] = null
+      Entry[1] = null
+      Entry[2] = null
+      Entry[3] = null
+      Entry[4] = null
+      Entry[5] = null
+      Entry[6] = null
+      Entry[7] = null
+      Entry[8] = class java.util.Hashtable$Entry@33d71131
+      Entry[9] = class java.util.Hashtable$Entry@4711a544
+      Entry[10] = null
+      Entry[11] = null
+      Entry[12] = null
+      Entry[13] = class java.util.Hashtable$Entry@e9b8424
+      Entry[14] = class java.util.Hashtable$Entry@617298a0
+      Entry[15] = class java.util.Hashtable$Entry@6a275326
+      Entry[16] = null
+      Entry[17] = class java.util.Hashtable$Entry@20d6e0a3
+      Entry[18] = class java.util.Hashtable$Entry@723eea39
+      Entry[19] = null
+      Entry[20] = class java.util.Hashtable$Entry@77cdb46
+      Entry[21] = null
+      Entry[22] = null
+      Entry[23] = class java.util.Hashtable$Entry@579206ec
+      Entry[24] = null
+      Entry[25] = null
+      Entry[26] = class java.util.Hashtable$Entry@40562745
+      Entry[27] = null
+      Entry[28] = class java.util.Hashtable$Entry@453c6254
+      Entry[29] = null
+      Entry[30] = class java.util.Hashtable$Entry@247b275e
+      Entry[31] = class java.util.Hashtable$Entry@6319f05b
+      Entry[32] = class java.util.Hashtable$Entry@12849f72
+      Entry[33] = null
+      Entry[34] = class java.util.Hashtable$Entry@340c61b4
+      Entry[35] = null
+      Entry[36] = null
+      Entry[37] = class java.util.Hashtable$Entry@4930f1bc
+      Entry[38] = class java.util.Hashtable$Entry@65074be9
+      Entry[39] = class java.util.Hashtable$Entry@53ce2734
+      Entry[40] = null
+      Entry[41] = null
+      Entry[42] = null
+      Entry[43] = null
+      Entry[44] = null
+      Entry[45] = null
+      Entry[46] = null
+    count = 21
+    threshold = 35
+    loadFactor = 0.75
+    modCount = 23
+    serialVersionUID = 1421746759512286392
+    MAX_ARRAY_SIZE = 2147483639
+    keySet = null
+    entrySet = null
+    values = null
+    KEYS = 0
+    VALUES = 1
+    ENTRIES = 2
+  m_serviceReference = null
+
+Dump of objectArray[1]
+Object type = org.apache.felix.scr.impl.manager.ComponentContextImpl
+  m_componentManager = class org.apache.felix.scr.impl.manager.SingleComponentManager@5372fecd
+    m_useCount = class java.util.concurrent.atomic.AtomicInteger@444ce1bf
+      serialVersionUID = 6214790243416807050
+      unsafe = class sun.misc.Unsafe@7c5ba892
+      valueOffset = 12
+      value = 1
+      serialVersionUID = -8742448824652078965
+    m_componentContext = class org.apache.felix.scr.impl.manager.ComponentContextImpl@114cb81d
+    m_configurationProperties = class java.util.HashMap@612c53e2
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[2]
+      entrySet = class java.util.HashMap$EntrySet@6da11be9
+      size = 1
+      modCount = 1
+      threshold = 1
+      loadFactor = 0.75
+      keySet = class java.util.HashMap$KeySet@12ce727
+      values = null
+    m_factoryProperties = class java.util.HashMap@16af9a68
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[32]
+      entrySet = class java.util.HashMap$EntrySet@319dd6b2
+      size = 21
+      modCount = 21
+      threshold = 24
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    m_properties = class java.util.HashMap@5ca58e7c
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = class java.util.HashMap$Node[32]
+      entrySet = class java.util.HashMap$EntrySet@58c24dc8
+      size = 21
+      modCount = 21
+      threshold = 24
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    m_serviceProperties = null
+    REASONS = class java.lang.String[7]
+      String[0] = "Unspecified"
+      String[1] = "Component disabled"
+      String[2] = "Reference became unsatisfied"
+      String[3] = "Configuration modified"
+      String[4] = "Configuration deleted"
+      String[5] = "Component disabled"
+      String[6] = "Bundle stopped"
+    m_container = class org.apache.felix.scr.impl.manager.ComponentFactoryImpl@16e19b3b
+      m_componentInstances = class java.util.IdentityHashMap@2c4f37cf
+      m_configuration = class java.util.HashMap@612c53e2
+      m_hasConfiguration = false
+      m_changeCount = -1
+      m_targetedPID = null
+      REASONS = class java.lang.String[7]
+      m_container = class org.apache.felix.scr.impl.ComponentRegistry$DefaultConfigurableComponentHolder@6c24c14e
+      m_factoryInstance = false
+      m_componentId = 280
+      m_componentMethods = class org.apache.felix.scr.impl.inject.ComponentMethodsImpl@664731f5
+      m_dependencyManagers = class java.util.ArrayList@6d5ddc67
+      m_dependencyManagersInitialized = false
+      m_trackingCount = class java.util.concurrent.atomic.AtomicInteger@7c429cd9
+      m_stateLock = class java.util.concurrent.locks.ReentrantLock@29e63dd1
+      m_enabledLatchRef = class java.util.concurrent.atomic.AtomicReference@6302b712
+      state = class java.util.concurrent.atomic.AtomicReference@603fe1f1
+      m_floor = 0
+      m_ceiling = 0
+      m_missingLock = class java.util.concurrent.locks.ReentrantLock@8730d7b
+      m_missingCondition = class java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@10e3b111
+      m_missing = class java.util.TreeSet@662f3e38
+      m_activationLock = class java.util.concurrent.locks.ReentrantReadWriteLock@79007b65
+      failureReason = null
+      taskCounter = class java.util.concurrent.atomic.AtomicLong@3e330445
+      registrationManager = class org.apache.felix.scr.impl.manager.AbstractComponentManager$3@6988a9eb
+    m_factoryInstance = true
+    m_componentId = 452
+    m_componentMethods = class org.apache.felix.scr.impl.inject.ComponentMethodsImpl@664731f5
+      m_activateMethod = class org.apache.felix.scr.impl.inject.methods.ActivateMethod@6eb16e52
+      m_modifiedMethod = class org.apache.felix.scr.impl.inject.methods.ModifiedMethod@5c5db920
+      m_deactivateMethod = class org.apache.felix.scr.impl.inject.methods.DeactivateMethod@2b15c168
+      m_constructor = class org.apache.felix.scr.impl.inject.ComponentConstructor@33b214b8
+      bindMethodMap = class java.util.HashMap@56943f62
+    m_dependencyManagers = class java.util.ArrayList@272badde
+      serialVersionUID = 8683452581122892189
+      DEFAULT_CAPACITY = 10
+      EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      DEFAULTCAPACITY_EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      elementData = class java.lang.Object[4]
+      size = 4
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 4
+      MAX_ARRAY_SIZE = 2147483639
+    m_dependencyManagersInitialized = true
+    m_trackingCount = class java.util.concurrent.atomic.AtomicInteger@6289c4b6
+      serialVersionUID = 6214790243416807050
+      unsafe = class sun.misc.Unsafe@7c5ba892
+      valueOffset = 12
+      value = 7
+      serialVersionUID = -8742448824652078965
+    m_stateLock = class java.util.concurrent.locks.ReentrantLock@782ba39f
+      serialVersionUID = 7373984872572414699
+      sync = class java.util.concurrent.locks.ReentrantLock$FairSync@67311829
+    m_enabledLatchRef = class java.util.concurrent.atomic.AtomicReference@273cfdf6
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@7c5ba892
+      valueOffset = 12
+      value = class org.osgi.util.promise.Deferred@c85cae2
+    state = class java.util.concurrent.atomic.AtomicReference@5d83f192
+      serialVersionUID = -1848883965231344442
+      unsafe = class sun.misc.Unsafe@7c5ba892
+      valueOffset = 12
+      value = class org.apache.felix.scr.impl.manager.AbstractComponentManager$State@10bdc396
+    m_floor = 7
+    m_ceiling = 7
+    m_missingLock = class java.util.concurrent.locks.ReentrantLock@718322e0
+      serialVersionUID = 7373984872572414699
+      sync = class java.util.concurrent.locks.ReentrantLock$NonfairSync@62a2b1e
+    m_missingCondition = class java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@54915014
+      serialVersionUID = 1173984872572414699
+      firstWaiter = null
+      lastWaiter = null
+      REINTERRUPT = 1
+      THROW_IE = -1
+      this$0 = class java.util.concurrent.locks.ReentrantLock$NonfairSync@62a2b1e
+    m_missing = class java.util.TreeSet@1402d43d
+      m = class java.util.TreeMap@46767547
+      PRESENT = class java.lang.Object@11c19b21
+      serialVersionUID = -2479143000061671589
+      MAX_ARRAY_SIZE = 2147483639
+    m_activationLock = class java.util.concurrent.locks.ReentrantReadWriteLock@564fa84e
+      serialVersionUID = -6992448646407690164
+      readerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$ReadLock@7e7145b5
+      writerLock = class java.util.concurrent.locks.ReentrantReadWriteLock$WriteLock@37b95f59
+      sync = class java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@84a430a
+      UNSAFE = class sun.misc.Unsafe@7c5ba892
+      TID_OFFSET = 40
+    failureReason = null
+    taskCounter = class java.util.concurrent.atomic.AtomicLong@3e330445
+      serialVersionUID = 1927816293512124184
+      unsafe = class sun.misc.Unsafe@7c5ba892
+      valueOffset = 16
+      VM_SUPPORTS_LONG_CAS = true
+      value = 0
+      serialVersionUID = -8742448824652078965
+    registrationManager = class org.apache.felix.scr.impl.manager.AbstractComponentManager$3@607ce267
+      this$0 = class org.apache.felix.scr.impl.manager.SingleComponentManager@5372fecd
+      registrationLock = class java.util.concurrent.locks.ReentrantLock@10e4dea
+      opqueue = class java.util.ArrayList@2de56bd1
+      m_serviceRegistration = null
+  edgeInfos = class org.apache.felix.scr.impl.manager.EdgeInfo[4]
+    EdgeInfo[0] = class org.apache.felix.scr.impl.manager.EdgeInfo@1c90ddc5
+      open = 7
+      close = -1
+      openLatch = class java.util.concurrent.CountDownLatch@3a8e5d55
+      closeLatch = class java.util.concurrent.CountDownLatch@58f01e8c
+    EdgeInfo[1] = class org.apache.felix.scr.impl.manager.EdgeInfo@3b5517ad
+      open = 2
+      close = -1
+      openLatch = class java.util.concurrent.CountDownLatch@419e541f
+      closeLatch = class java.util.concurrent.CountDownLatch@36060c61
+    EdgeInfo[2] = class org.apache.felix.scr.impl.manager.EdgeInfo@369a7b1d
+      open = 7
+      close = -1
+      openLatch = class java.util.concurrent.CountDownLatch@5389b273
+      closeLatch = class java.util.concurrent.CountDownLatch@53f2ae68
+    EdgeInfo[3] = class org.apache.felix.scr.impl.manager.EdgeInfo@3a157bec
+      open = 7
+      close = -1
+      openLatch = class java.util.concurrent.CountDownLatch@5919aad8
+      closeLatch = class java.util.concurrent.CountDownLatch@6f5cf966
+  m_componentInstance = class org.apache.felix.scr.impl.manager.ComponentContextImpl$ComponentInstanceImpl@16389c1b
+    m_componentContext = class org.apache.felix.scr.impl.manager.ComponentContextImpl@114cb81d
+  m_usingBundle = class org.eclipse.osgi.internal.framework.EquinoxBundle@7592330f
+    equinoxContainer = class org.eclipse.osgi.internal.framework.EquinoxContainer@748bab4d
+      NAME = "org.eclipse.osgi"
+      secureAction = class org.eclipse.osgi.framework.util.SecureAction@211ca17e
+      equinoxConfig = class org.eclipse.osgi.internal.framework.EquinoxConfiguration@4758337f
+      logServices = class org.eclipse.osgi.internal.log.EquinoxLogServices@107d8251
+      storage = class org.eclipse.osgi.storage.Storage@4c4dab1c
+      packageAdmin = class org.eclipse.osgi.internal.framework.legacy.PackageAdminImpl@89ef4ba
+      startLevel = class org.eclipse.osgi.internal.framework.legacy.StartLevelImpl@e5bfd1d
+      bootDelegation = class java.util.HashSet@7248998d
+      bootDelegationStems = class java.lang.String[12]
+      bootDelegateAll = false
+      isProcessClassRecursionSupportedByAll = false
+      eventPublisher = class org.eclipse.osgi.internal.framework.EquinoxEventPublisher@2c38cc72
+      monitor = class java.lang.Object@7d5a6ffd
+      serviceRegistry = class org.eclipse.osgi.internal.serviceregistry.ServiceRegistry@5ba1fa7b
+      contextFinder = class org.eclipse.osgi.internal.framework.ContextFinder@17e8e161
+      signedContentFactory = class org.osgi.util.tracker.ServiceTracker@4be8052a
+      executor = class java.util.concurrent.ScheduledThreadPoolExecutor@7e6dfd95
+      storageSaver = class org.eclipse.osgi.internal.framework.StorageSaver@14dce576
+    module = class org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule@64f827ab
+      this$0 = class org.eclipse.osgi.internal.framework.EquinoxBundle@7592330f
+      ACTIVE_SET = class java.util.RegularEnumSet@20cb48a3
+      RESOLVED_SET = class java.util.RegularEnumSet@5e148e5f
+      id = 148
+      location = "feature@reference:file:/Users/arprasto/scrap/workspace-eclipse/sample.daytrader7/daytrader-ee7/target/liberty/wlp/lib/com.ibm.ws.transport.iiop_1.0.36.jar"
+      revisions = class org.eclipse.osgi.container.ModuleRevisions@60131f6c
+      stateChangeLock = class org.eclipse.osgi.internal.container.EquinoxReentrantLock@62fd0598
+      stateTransitionEvents = class java.util.RegularEnumSet@1889d734
+      settings = class java.util.RegularEnumSet@6295d40c
+      inStart = class java.util.concurrent.atomic.AtomicInteger@1a055f4d
+      state = class org.eclipse.osgi.container.Module$State@105e5850
+      startlevel = 12
+      lastModified = 1580474838855
+      VALID_RESOLVED_TRANSITION = class java.util.RegularEnumSet@46b81d18
+      VALID_STOPPED_TRANSITION = class java.util.RegularEnumSet@ac18477
+      $SWITCH_TABLE$org$eclipse$osgi$container$ModuleContainerAdaptor$ModuleEvent = {1,2,3,4,5,6,7,8,9,10} /* array length = 10 */
+    monitor = class java.lang.Object@11fcd10e
+    context = class org.eclipse.osgi.internal.framework.BundleContextImpl@5c1d3603
+    signerInfos = null
+    $SWITCH_TABLE$org$eclipse$osgi$container$Module$State = {1,2,3,4,5,6,7} /* array length = 7 */
+  m_serviceRegistration = class org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl@13e1d245
+    registry = class org.eclipse.osgi.internal.serviceregistry.ServiceRegistry@5ba1fa7b
+      SERVICEEVENT = 3
+      findHookName = "org.osgi.framework.hooks.service.FindHook"
+      eventHookName = "org.osgi.framework.hooks.service.EventHook"
+      eventListenerHookName = "org.osgi.framework.hooks.service.EventListenerHook"
+      listenerHookName = "org.osgi.framework.hooks.service.ListenerHook"
+      publishedServicesByClass = class java.util.HashMap@48b2af9f
+      allPublishedServices = class java.util.ArrayList@22bc72ee
+      publishedServicesByContext = class java.util.HashMap@685ac77c
+      serviceid = 536
+      serviceEventListeners = class java.util.LinkedHashMap@e69d850
+      initialCapacity = 50
+      initialSubCapacity = 10
+      container = class org.eclipse.osgi.internal.framework.EquinoxContainer@748bab4d
+      systemBundleContext = class org.eclipse.osgi.internal.framework.BundleContextImpl@48793bef
+      debug = class org.eclipse.osgi.internal.debug.Debug@537a5055
+      $assertionsDisabled = true
+    context = class org.eclipse.osgi.internal.framework.BundleContextImpl@5c1d3603
+    bundle = class org.eclipse.osgi.internal.framework.EquinoxBundle@7592330f
+    clazzes = class java.lang.String[3]
+      String[0] = "com.ibm.ws.transport.iiop.spi.ORBRef"
+      String[1] = "com.ibm.ws.transport.iiop.spi.ClientORBRef"
+      String[2] = "com.ibm.ws.transport.iiop.spi.ServerPolicySource"
+    service = class org.apache.felix.scr.impl.manager.SingleComponentManager@5372fecd
+    reference = class org.eclipse.osgi.internal.serviceregistry.ServiceReferenceImpl@3260ac46
+      registration = class org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl@13e1d245
+    contextsUsing = class java.util.ArrayList@73e0de2d
+      serialVersionUID = 8683452581122892189
+      DEFAULT_CAPACITY = 10
+      EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      DEFAULTCAPACITY_EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      elementData = class java.lang.Object[10]
+      size = 1
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 1
+      MAX_ARRAY_SIZE = 2147483639
+    properties = class java.util.Collections$UnmodifiableMap@27469008
+      serialVersionUID = -1034234728574286014
+      m = class org.eclipse.osgi.internal.serviceregistry.ServiceProperties@1c21b420
+      keySet = null
+      entrySet = null
+      values = null
+    serviceid = 534
+    serviceranking = 5
+    registrationLock = class java.lang.Object@828a6e3
+    state = 0
+    REGISTERED = 0
+    UNREGISTERING = 1
+    UNREGISTERED = 2
+    FRAMEWORK_SET_SERVICE_PROPERTIES_COUNT = 4
+    $assertionsDisabled = true
+  m_implementationObject = class com.ibm.ws.transport.iiop.internal.ORBWrapperInternal@bff1ae2
+    tc = class com.ibm.websphere.ras.TraceComponent@2173151d
+      strings[0] = "TraceComponent[com.ibm.ws.transport.iiop.internal.ORBWrapperInternal,class com.ibm.ws.transport.iiop.internal.ORBWrapperInternal,[IIOP],com.ibm.ws.transport.iiop.resources.IiopMessages,null]"
+    KEY = "AdapterActivatorOp"
+    POA_NAME = "POAName"
+    configAdapter = class com.ibm.ws.transport.iiop.yoko.ORBConfigAdapter@49fb8583
+      tc = class com.ibm.websphere.ras.TraceComponent@279f0700
+      serialVersionUID = 495296215346796646
+    orb = null
+    rootPOA = null
+    endpoints = class java.util.ArrayList@cfffd5
+      serialVersionUID = 8683452581122892189
+      DEFAULT_CAPACITY = 10
+      EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      DEFAULTCAPACITY_EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      elementData = class java.lang.Object[10]
+      size = 1
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 1
+      MAX_ARRAY_SIZE = 2147483639
+    extraConfig = class java.util.HashMap@11ef6204
+      serialVersionUID = 362498820763181265
+      DEFAULT_INITIAL_CAPACITY = 16
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      table = null
+      entrySet = null
+      size = 0
+      modCount = 0
+      threshold = 0
+      loadFactor = 0.75
+      keySet = null
+      values = null
+    map = class com.ibm.wsspi.kernel.service.utils.ConcurrentServiceReferenceMap@28e4386f
+      referenceName = "AdapterActivatorOp"
+      context = class org.apache.felix.scr.impl.manager.ComponentContextImpl@114cb81d
+      elementMap = class java.util.concurrent.ConcurrentHashMap@2d76130e
+      serialVersionUID = 6980924785166233786
+      $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@e7bd7ed
+    serialVersionUID = 7164573451466630029
+    subsystemFactories = class java.util.ArrayList@3d26776d
+      serialVersionUID = 8683452581122892189
+      DEFAULT_CAPACITY = 10
+      EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      DEFAULTCAPACITY_EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      elementData = class java.lang.Object[10]
+      size = 4
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 4
+      MAX_ARRAY_SIZE = 2147483639
+    properties = class org.apache.felix.scr.impl.helper.ReadOnlyDictionary@4268164b
+      m_delegate = class java.util.Hashtable@21d3c170
+      m_serviceReference = null
+    serialVersionUID = 5107061526873741325
+    $$$tc$$$ = class com.ibm.websphere.ras.TraceComponent@1f48607d
+      strings[0] = "TraceComponent[com.ibm.ws.transport.iiop.internal.ServerPolicySourceImpl,class com.ibm.ws.transport.iiop.internal.ServerPolicySourceImpl,[IIOP],com.ibm.ws.transport.iiop.resources.IiopMessages,null]"
+  m_implementationAccessible = false
+  accessibleLatch = class java.util.concurrent.CountDownLatch@60779993
+    sync = class java.util.concurrent.CountDownLatch$Sync@4af99944
+      serialVersionUID = 4982264981922014374
+      serialVersionUID = 7373984972572414691
+      head = null
+      tail = null
+      state = 1
+      spinForTimeoutThreshold = 1000
+      unsafe = class sun.misc.Unsafe@7c5ba892
+      stateOffset = 16
+      headOffset = 20
+      tailOffset = 24
+      waitStatusOffset = 12
+      nextOffset = 20
+      serialVersionUID = 3737899427754241961
+      exclusiveOwnerThread = null
+  serviceObjectsHelper = class org.apache.felix.scr.impl.helper.ComponentServiceObjectsHelper@24b797c6
+    bundleContext = class org.eclipse.osgi.internal.framework.BundleContextImpl@5c1d3603
+      findHookName = "org.osgi.framework.hooks.bundle.FindHook"
+      valid = true
+      bundle = class org.eclipse.osgi.internal.framework.EquinoxBundle@7592330f
+      container = class org.eclipse.osgi.internal.framework.EquinoxContainer@748bab4d
+      debug = class org.eclipse.osgi.internal.debug.Debug@537a5055
+      servicesInUse = class java.util.HashMap@3bd0be97
+      activator = null
+      contextLock = class java.lang.Object@4842c51a
+    services = class java.util.concurrent.ConcurrentHashMap@4776689f
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 4
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = null
+      nextTable = null
+      baseCount = 0
+      sizeCtl = 0
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@7c5ba892
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+    closedServices = class java.util.ArrayList@68142ae8
+      serialVersionUID = 8683452581122892189
+      DEFAULT_CAPACITY = 10
+      EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      DEFAULTCAPACITY_EMPTY_ELEMENTDATA = class java.lang.Object[0]
+      elementData = class java.lang.Object[0]
+      size = 0
+      MAX_ARRAY_SIZE = 2147483639
+      modCount = 0
+      MAX_ARRAY_SIZE = 2147483639
+    prototypeInstances = class java.util.concurrent.ConcurrentHashMap@85ceb5c
+      serialVersionUID = 7249069246763182397
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_CAPACITY = 16
+      MAX_ARRAY_SIZE = 2147483639
+      DEFAULT_CONCURRENCY_LEVEL = 16
+      LOAD_FACTOR = 0.75
+      TREEIFY_THRESHOLD = 8
+      UNTREEIFY_THRESHOLD = 6
+      MIN_TREEIFY_CAPACITY = 64
+      MIN_TRANSFER_STRIDE = 16
+      RESIZE_STAMP_BITS = 16
+      MAX_RESIZERS = 65535
+      RESIZE_STAMP_SHIFT = 16
+      MOVED = -1
+      TREEBIN = -2
+      RESERVED = -3
+      HASH_BITS = 2147483647
+      NCPU = 4
+      serialPersistentFields = class java.io.ObjectStreamField[3]
+      table = null
+      nextTable = null
+      baseCount = 0
+      sizeCtl = 0
+      transferIndex = 0
+      cellsBusy = 0
+      counterCells = null
+      keySet = null
+      values = null
+      entrySet = null
+      U = class sun.misc.Unsafe@7c5ba892
+      SIZECTL = 20
+      TRANSFERINDEX = 32
+      BASECOUNT = 24
+      CELLSBUSY = 36
+      CELLVALUE = 144
+      ABASE = 16
+      ASHIFT = 2
+      keySet = null
+      values = null
+  boundValues = null
+

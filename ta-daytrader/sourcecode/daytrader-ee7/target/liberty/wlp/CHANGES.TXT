@@ -1,0 +1,21 @@
+OLGH6956 Liberty depends on the ps command during shutdown
+OLGH9441 auto-features which depend on kernel features do not get installed
+PH18762 ADD SUPPORT FOR GZIP ENCODING
+OLGH8563 Pull in MyFaces 2.3.6
+OLGH8773 OIDC Client Requests Tokens with the same auth code
+OLGH9281 auditUtility command/script file not found in <wlp>/bin directory.
+OLGH9307 Error message when MP Open Tracing feature is enabled but not in use
+OLGH9516 Unfriendly user error message displayed and user is blocked from signing in to their application when their liberty session expires
+OLGH9602 H2 Synchronization problem with tests that are sending duplicate frames
+OLGH9679 H2 intermittent error when upgrade fails
+OLGH9708 For a batch job with partitioned step, the PartitionReducer's afterPartitionedStepCompletion gets ROLLBACK on normal completion.
+OLGH9798 Handling logging out of mp jwt flow introduces an error
+OLGH9848 Resource adapters might fail to start with Bean Validation 1.1 and CDI 1.2 enabled.
+OLGH9886 Unresolved module com.ibm.ws.rest.handler.validator.jca
+OLGH9904 javax.servlet.ServletRequest.getParameterValues returns null in Jaxrs applications
+OLGH10006 service.ranking can be removed from com.ibm.ws.persistence defaultInstances.xml
+OLGH10030 H2 connection error causes server timeout
+OLGH10144 Add additional support for range attributes on Active Directory Ldap searches
+OLGH10165 Fault Tolerance messages not output
+OLGH10178 Resource leak when installing features through Gradle on Windows
+OLGH10215 CXF cannot process a gzip encoded SOAP response
